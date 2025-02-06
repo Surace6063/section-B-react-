@@ -1,4 +1,6 @@
 import './App.css'
+import Counter from './components/Counter'
+import Form from './components/Form'
 import UserProfile from './components/UserProfile'
 
 
@@ -30,9 +32,13 @@ const App = () => {
     // </div>
 
     <div>
-      <UserProfile />
-      <UserProfile />
-      <UserProfile />
+      {/* <UserProfile id={101} name='john' age={23} />
+      <UserProfile id={102} name='Ram' age={24} />
+      <UserProfile id={103} name='Hari' age={25} /> */}
+
+      {/* <Counter /> */}
+
+      <Form />
     </div>
   )
 }
