@@ -1,7 +1,13 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Counter from './components/Counter'
 import Form from './components/Form'
+import Navbar from './components/Navbar'
+import ProductList from './components/ProductList'
+import UserList from './components/UserList'
 import UserProfile from './components/UserProfile'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
 
 
 const App = () => {
@@ -38,7 +44,18 @@ const App = () => {
 
       {/* <Counter /> */}
 
-      <Form />
+      {/* <Form /> */}
+
+      {/* <UserList /> */}
+
+      {/* <ProductList /> */}
+
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
+
+      </Routes>
     </div>
   )
 }

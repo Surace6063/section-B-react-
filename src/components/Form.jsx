@@ -14,7 +14,7 @@ const Form = () => {
         console.log(formData);
     }
     return (
-        <form onSubmit={handleSubmit} className="border p-4 rounded-md m-2 space-y-4">
+        <form onSubmit={handleSubmit} className="border p-4 rounded-md m-2 space-y-4 w-fit">
             <div>
                 <label htmlFor="email">Email</label>
                 <input
